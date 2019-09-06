@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/vedio_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="@dimen/activity_vedio_gridview_item_padding">
+
+
+    <FrameLayout
+        android:id="@+id/vedio_surface_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal">
+
+        <SurfaceView
+            android:id="@+id/surface_previous"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+
+    </FrameLayout>
+
+    <ImageView
+        android:id="@+id/no_camera"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="40dp"
+        android:src="@mipmap/no_camera" />
+    <ProgressBar
+        android:id="@+id/wait_progress"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="40dp"
+        android:visibility="gone"/>
+
+    <TextView
+        android:id="@+id/title_textview"
+        android:layout_width="match_parent"
+        android:layout_height="24dp"
+        android:layout_below="@id/vedio_surface_layout"
+        android:gravity="center"
+        android:text="暂无摄像头"
+        android:textColor="@color/show_camera"
+        android:textSize="14sp" />
+</RelativeLayout>

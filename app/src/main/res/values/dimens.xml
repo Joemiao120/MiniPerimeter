@@ -1,0 +1,23 @@
+<resources>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+
+    <dimen name="activity_vedio_title_bar">60dp</dimen>
+    <dimen name="activity_vedio_gridview_item_padding">1dp</dimen>
+    <dimen name="activity_vedio_gridview_layout_top">8dp</dimen>
+    <dimen name="activity_vedio_gridview_verticalSpacing">9dp</dimen>
+    <dimen name="activity_vedio_gridview_horizontalSpacing">9dp</dimen>
+
+    <dimen name="activity_vedio_adjustment_bright_leftmargin">20dp</dimen>
+    <dimen name="activity_vedio_adjustment_height">130dp</dimen>
+    <dimen name="activity_vedio_play_control_height">46dp</dimen>
+
+    <dimen name="activity_home_horizontal_margin">16dp</dimen>
+    <dimen name="activity_home_vertical_margin">16dp</dimen>
+
+
+    <dimen name="test">36dp</dimen>
+    <dimen name="activity_history_alarm_grid_height">90dp</dimen>
+
+</resources>

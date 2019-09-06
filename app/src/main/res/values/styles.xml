@@ -1,0 +1,65 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+    <style name="appStartStype" parent="@android:style/Theme.Holo.Light">
+        <!--<item name="android:windowNoTitle">true</item>-->
+        <!--<item name="android:windowAnimationStyle">@style/FeelyouWindowAnimTheme</item>-->
+        <!--<item name="android:windowIsTranslucent">true</item>-->
+
+         <!--<item name="android:windowBackground">@color/white</item>-->
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowAnimationStyle">@style/Animation.Activity.Translucent.Style</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <!--<item name="android:windowTranslucentStatus">true</item>-->
+         <!--<item name="android:windowTranslucentNavigation">true</item>-->
+    </style>
+    <style name="FeelyouWindowAnimTheme" parent="@android:style/Animation.Activity">
+        <item name="android:activityOpenEnterAnimation">@anim/in_from_left</item>
+        <item name="android:activityOpenExitAnimation">@anim/out_from_right</item>
+        <item name="android:activityCloseEnterAnimation">@anim/in_from_right</item>
+        <item name="android:activityCloseExitAnimation">@anim/out_from_left</item>
+    </style>
+    <style name="Animation.Activity.Style" parent="@android:style/Animation.Activity">
+        <!--<item name="android:activityOpenEnterAnimation">@anim/base_slide_right_in</item>-->
+        <!--<item name="android:activityOpenExitAnimation">@anim/base_stay_orig</item>-->
+        <!--<item name="android:activityCloseEnterAnimation">@anim/base_stay_orig</item>-->
+        <!--<item name="android:activityCloseExitAnimation">@anim/base_slide_right_out</item>-->
+        <!--<item name="android:taskOpenEnterAnimation">@anim/base_slide_right_in</item>-->
+        <!--<item name="android:taskOpenExitAnimation">@anim/base_stay_orig</item>-->
+        <!--<item name="android:taskCloseEnterAnimation">@anim/base_stay_orig</item>-->
+        <!--<item name="android:taskCloseExitAnimation">@anim/base_slide_right_out</item>-->
+        <!--<item name="android:taskToFrontEnterAnimation">@anim/base_slide_right_in</item>-->
+        <!--<item name="android:taskToFrontExitAnimation">@anim/base_stay_orig</item>-->
+        <!--<item name="android:taskToBackEnterAnimation">@anim/base_stay_orig</item>-->
+        <!--<item name="android:taskToBackExitAnimation">@anim/base_slide_right_out</item>-->
+        <item name="android:activityOpenEnterAnimation">@anim/in_from_left</item>
+        <item name="android:activityOpenExitAnimation">@anim/out_from_right</item>
+        <item name="android:activityCloseEnterAnimation">@anim/in_from_right</item>
+        <item name="android:activityCloseExitAnimation">@anim/out_from_left</item>
+    </style>
+
+    <style name="Animation.Activity.Translucent.Style" parent="@android:style/Animation.Translucent">
+        <!--<item name="android:windowEnterAnimation">@anim/base_slide_right_in</item>-->
+        <!--<item name="android:windowExitAnimation">@anim/base_slide_right_out</item>-->
+        <item name="android:activityOpenEnterAnimation">@anim/in_from_left</item>
+        <item name="android:activityOpenExitAnimation">@anim/out_from_right</item>
+        <item name="android:activityCloseEnterAnimation">@anim/in_from_right</item>
+        <item name="android:activityCloseExitAnimation">@anim/out_from_left</item>
+    </style>
+
+    <style name="mProgress_circle">
+        <item name="android:indeterminateDrawable">@drawable/progressbar_circle</item>
+        <item name="android:minWidth">40dp</item>
+        <item name="android:minHeight">40dp</item>
+        <item name="android:maxWidth">60dp</item>
+        <item name="android:maxHeight">60dp</item>
+    </style>
+
+</resources>

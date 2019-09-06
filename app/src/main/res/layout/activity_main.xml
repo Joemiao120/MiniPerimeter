@@ -1,0 +1,41 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/container"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="@android:color/black"
+    android:padding="10dip"
+    >
+
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/activity_vedio_title_bar"
+        android:background="@android:color/holo_blue_light"
+        android:id="@+id/vedio_title_layout"
+
+        >
+
+        <Button
+            android:layout_width="100dp"
+            android:layout_height="match_parent"
+            android:text="login"
+            android:id="@+id/login_button"/>
+        <Button
+            android:layout_toRightOf="@id/login_button"
+            android:layout_width="100dp"
+            android:layout_height="match_parent"
+            android:text="preview"
+            android:id="@+id/perview_button"/>
+        <Button
+            android:layout_toRightOf="@id/perview_button"
+            android:layout_width="100dp"
+            android:layout_height="match_parent"
+            android:text="stat"
+            android:id="@+id/start"/>
+
+    </RelativeLayout>
+
+</LinearLayout>

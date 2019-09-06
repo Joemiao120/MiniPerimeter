@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="title_bg">#1ca3e9</color>
+
+    <color name="white">#FFFFFF</color>
+    <color name="black">#000000</color>
+    <!--<color name="gray">#808080</color>-->
+    <color name="gray">#F7F7F7</color>
+    <color name="transparent">#0000ff00</color>
+    <color name="red_dark">@android:color/holo_red_dark</color>
+    <color name="play_seekbar_start_end">#BFBFBF</color>
+    <color name="play_seekbar_alarm">#DF907F</color>
+
+    <color name="activity_status_bar_color">#00ADEF</color>
+    <color name="login_backgroud">#00aeee</color>
+    <color name="login_edittext_hint_color">#a3d9f7</color>
+    <color name="button_press_bg">#3ec4f7</color>
+    <color name="button_bg">#00adef</color>
+    <color name="configuration_edit_border_color">#a8a8a8</color>
+    <color name="configuration_hint_color">#585858</color>
+    <color name="configuration_text_color">#00aeec</color>
+    <color name="configuration_text_color2">#3a3a3a</color>
+    <color name="setting_text_color">#606060</color>
+    <color name="line_setting_text_color">#4f4f4f</color>
+    <color name="modify_password_text_color">#606060</color>
+    <color name="modify_password_edit_border_color">#969696</color>
+    <color name="date_select_button_bg">#00aeee</color>
+    <color name="select_time_divider_bg">#4ac6f3</color>
+    <color name="select_time_hint_color">#8a8a8a</color>
+    <color name="history_alarm_text_color">#303030</color>
+    <color name="history_alarm_divider_color">#e6e6e6</color>
+    <color name="alpha30_white">#4cffffff</color>
+    <color name="history_alarm_list_title_color">#9f9f9f</color>
+    <color name="history_alarm_list_cotent_color">#555555</color>
+    <color name="history_alarm_list_item_bg">#f9f9f9</color>
+    <color name="home_vedio_alarm_bg">#ff6240</color>
+    <color name="show_camera">#dedede</color>
+
+</resources>

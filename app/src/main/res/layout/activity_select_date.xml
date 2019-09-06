@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="@color/white"
+              android:fitsSystemWindows="true"
+              android:orientation="horizontal">
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:gravity="center_vertical"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:gravity="center_horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/bt_date1"
+                android:layout_width="108dp"
+                android:layout_height="55dp"
+                android:text="今天"
+                android:background="@drawable/btn_date_select_bg"
+                android:textColor="@color/white"
+                android:textSize="22sp"/>
+            <Button
+                android:id="@+id/bt_date2"
+                android:layout_width="108dp"
+                android:layout_height="55dp"
+                android:layout_marginLeft="15dp"
+                android:text="昨天"
+                android:background="@drawable/btn_date_select_bg"
+                android:textColor="@color/white"
+                android:textSize="22sp"/>
+            <Button
+                android:id="@+id/bt_date3"
+                android:layout_width="108dp"
+                android:layout_height="55dp"
+                android:layout_marginLeft="15dp"
+                android:text="2016-03-27"
+                android:background="@drawable/btn_date_select_bg"
+                android:textColor="@color/white"
+                android:textSize="20sp"/>
+            <Button
+                android:id="@+id/bt_date4"
+                android:layout_marginLeft="15dp"
+                android:layout_width="108dp"
+                android:layout_height="55dp"
+                android:text="今天"
+                android:background="@drawable/btn_date_select_bg"
+                android:textColor="@color/white"
+                android:textSize="20sp"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:gravity="center_horizontal"
+            android:layout_width="match_parent"
+            android:layout_marginTop="25dp"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/bt_date5"
+                android:layout_width="108dp"
+                android:layout_height="55dp"
+                android:text="今天"
+                android:background="@drawable/btn_date_select_bg"
+                android:textColor="@color/white"
+                android:textSize="20sp"/>
+            <Button
+                android:id="@+id/bt_date6"
+                android:layout_width="108dp"
+                android:layout_height="55dp"
+                android:layout_marginLeft="15dp"
+                android:text="昨天"
+                android:background="@drawable/btn_date_select_bg"
+                android:textColor="@color/white"
+                android:textSize="20sp"/>
+            <Button
+                android:id="@+id/bt_date7"
+                android:layout_width="108dp"
+                android:layout_height="55dp"
+                android:layout_marginLeft="15dp"
+                android:text="今天"
+                android:background="@drawable/btn_date_select_bg"
+                android:textColor="@color/white"
+                android:textSize="20sp"/>
+            <Button
+                android:id="@+id/bt_date8"
+                android:layout_marginLeft="15dp"
+                android:layout_width="108dp"
+                android:layout_height="55dp"
+                android:text="今天"
+                android:background="@drawable/btn_date_select_bg"
+                android:textColor="@color/white"
+                android:textSize="20sp"/>
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <include layout="@layout/activity_titlebar"/>
+</LinearLayout>

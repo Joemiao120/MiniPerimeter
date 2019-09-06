@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@android:id/background"
+        android:drawable="@drawable/play_seek_nomal_test"></item>
+
+    <item android:id="@android:id/progress">
+        <clip android:drawable="@drawable/play_seekbar_nomal_test"></clip>
+        <!--<scale android:drawable="@drawable/play_seekbar_nomal_test" android:scaleWidth="100%" />-->
+    </item>
+</layer-list>

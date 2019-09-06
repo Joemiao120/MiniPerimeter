@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="150dp"
+              android:layout_height="90dp"
+              android:paddingLeft="5dp"
+              android:background="@color/white"
+              android:orientation="vertical">
+
+    <FrameLayout
+        android:id="@+id/fl_item"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/iv_history_alarm_image"
+            android:layout_width="match_parent"
+            android:scaleType="fitXY"
+            android:layout_height="match_parent"
+            android:src="@mipmap/ic_launcher"/>
+
+        <ImageView
+            android:id="@+id/iv_alpha30_white"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:visibility="gone"
+            android:background="@color/alpha30_white"
+            android:layout_gravity="bottom"
+           />
+        <ImageView
+            android:id="@+id/iv_history_alarm_more"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:src="@mipmap/history_alarm_more"
+            android:gravity="center"
+            />
+        <TextView
+            android:id="@+id/tv_history_alarm_time"
+            android:layout_width="match_parent"
+            android:layout_height="15dp"
+            android:layout_gravity="bottom"
+            android:textColor="@color/white"
+            android:textSize="12sp"
+            android:gravity="center_vertical"
+            android:paddingLeft="5dp"
+            android:text="12:20"/>
+    </FrameLayout>
+</LinearLayout>

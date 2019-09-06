@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/play_layout"
+    android:layout_width="match_parent"
+    android:layout_height="60dp"
+    >
+
+
+    <LinearLayout
+
+        android:id="@+id/control_linearlayout"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/activity_vedio_play_control_height"
+        android:layout_marginTop="8dp"
+        android:gravity="center"
+        android:orientation="horizontal"
+        >
+
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1.5">
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/vedio_play_to_start"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/play_to_start" />
+
+        </LinearLayout>
+
+        <RelativeLayout
+            android:id="@+id/vedio_play_slow_bt"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+
+            <ImageView
+                android:id="@+id/slow_iv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:src="@drawable/play_slow" />
+            <TextView
+                android:id="@+id/slow_show_rate"
+                android:layout_width="22dp"
+                android:layout_height="13dp"
+                android:layout_alignTop="@+id/slow_iv"
+                android:layout_marginTop="-4dp"
+                android:layout_toLeftOf="@+id/slow_iv"
+                android:background="@drawable/play_fast_slow_number_show"
+                android:gravity="center"
+                android:textColor="@color/white"
+                android:textSize="7sp"></TextView>
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:id="@+id/vedio_play_start_pause_layout"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            >
+
+            <ImageView
+                android:id="@+id/vedio_play_start_pause_bt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/play_restart"
+                />
+
+
+
+        </LinearLayout>
+
+        <RelativeLayout
+            android:id="@+id/vedio_play_fast_bt"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+
+            <ImageView
+                android:id="@+id/fast_iv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:background="@drawable/play_fast" />
+
+            <TextView
+                android:id="@+id/fast_show_rate"
+                android:layout_width="22dp"
+                android:layout_height="13dp"
+                android:layout_alignTop="@+id/fast_iv"
+                android:layout_marginTop="-4dp"
+                android:layout_toRightOf="@+id/fast_iv"
+                android:background="@drawable/play_fast_slow_number_show"
+                android:gravity="center"
+                android:textColor="@color/white"
+                android:textSize="7sp"></TextView>
+
+
+            <!--<LinearLayout-->
+            <!--android:id="@+id/show_rate_layout"-->
+            <!--android:layout_width="20dp"-->
+            <!--android:layout_height="13dp"-->
+            <!--android:layout_alignTop="@+id/fast_iv"-->
+            <!--android:layout_marginTop="-4dp"-->
+            <!--android:layout_toRightOf="@+id/fast_iv"-->
+            <!--android:background="@drawable/play_fast_slow_number_show"-->
+            <!--android:gravity="center">-->
+
+            <!--<TextView-->
+            <!--android:id="@+id/play_show_rate"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:gravity="center"-->
+            <!--android:textColor="@color/white"-->
+            <!--android:textSize="7sp"-->
+
+            <!--/>-->
+            <!--</LinearLayout>-->
+
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:id="@+id/vedio_play_to_end"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/play_to_end" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/showTime_layout"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1.5"
+            android:gravity="center">
+
+            <TextView
+                android:id="@+id/vedio_play_current_time_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="00:00"
+                android:textColor="@android:color/white"
+                android:textSize="10sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=" / "
+                android:textColor="@android:color/white" />
+
+            <TextView
+                android:id="@+id/vedio_play_total_time_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="28:00"
+                android:textColor="@android:color/white"
+                android:textSize="10sp"
+
+                />
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <include
+        android:id="@+id/progress_layout"
+        layout="@layout/vedio_play_progress"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+</FrameLayout>

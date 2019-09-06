@@ -1,0 +1,116 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 23
+    buildToolsVersion '22.0.1'
+
+    defaultConfig {
+        applicationId "com.nsitd.miniperimeter"
+        minSdkVersion 15
+        targetSdkVersion 22
+        versionCode 2
+        versionName "1.0.2"
+    }
+
+    lintOptions {
+        checkReleaseBuilds false
+        // Or, if you prefer, you can continue to check for errors in release builds,
+        // but continue the build even when errors are found:
+        abortOnError false
+    }
+
+    //签名文件配置项
+    signingConfigs { //gradle assembleRelease
+        /*
+           可以定义多个签名配置项，如下面的myConfig
+         */
+        myConfig {
+            storeFile file("signapk.pem")
+            storePassword "nsitd123456"
+//          storePassword System.console().readLine("\nKeystore password: ")
+            keyAlias "nsitd-freewifi"
+            keyPassword "nsitd123456"
+//          keyPassword System.console().readLine("\nKey password: ")
+        }
+    }
+
+    buildTypes {
+        //正式版配置项,配置使用签名文件
+        release {
+            //如果不使用此参数配置自定义字段.引入BuildConfig会发现找不到
+            buildConfigField("boolean", "API_ENV", "false")
+            //混淆
+            minifyEnabled true
+            //Zipalign优化
+            zipAlignEnabled true
+
+            // 移除无用的resource文件
+            shrinkResources true
+//            前一部分代表系统默认的android程序的混淆文件，该文件已经包含了基本的混淆声明
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard.cfg'
+//            debuggable true
+            signingConfig signingConfigs.myConfig
+        }
+        //debug配置项,配置使用签名文件
+        debug {
+            //配置自定义参数
+            //上述语法就定义了一个boolean类型的API_ENV字段，值为true，
+            // 之后我们就可以在程序中使用BuildConfig.API_ENV字段来判断我们所处的api环境
+            buildConfigField("boolean", "API_ENV", "true")
+
+//            //混淆
+//            minifyEnabled true
+//            //Zipalign优化
+//            zipAlignEnabled true
+//
+//            // 移除无用的resource文件
+//            shrinkResources true
+////            前一部分代表系统默认的android程序的混淆文件，该文件已经包含了基本的混淆声明
+//            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard.cfg'
+            //debug模式.如果为false则无法进入debug模式
+            debuggable true  //启用debug的buildType配置
+            signingConfig signingConfigs.myConfig
+        }
+    }
+
+    flavorDimensions "default"
+    //多渠道打包配置项
+    productFlavors {
+        //配置包名,和其他信息
+        psytopic {
+            applicationId "com.test.miniperimeter" //比如 专业版
+            manifestPlaceholders = [APP_NAME: "迷你周界测试"]
+        }
+        produce {
+            applicationId "com.nsitd.miniperimeter" //比如 专业版
+            manifestPlaceholders = [UMENG_KEY: "5693617567e58e4bc1002ec3", APP_NAME: "迷你周界"]
+        }
+
+    }
+    sourceSets {
+        main {
+            res.srcDirs = ['src/main/res', 'src/main/res/values-hdpi', 'src/main/res/values-xhdpi', 'src/main/res/values-xxhdpi', 'src/main/res/vaules-xxxhdpi']
+        }
+    }
+}
+
+dependencies {
+    compile fileTree(dir: 'libs', include: ['*.jar'])
+    testCompile 'junit:junit:4.12'
+    compile 'com.android.support:appcompat-v7:23.1.1'
+    compile files('src/main/libs/lite-http-2.3.1.jar')
+    compile files('src/main/libs/AudioEngineSDK.jar')
+    compile files('src/main/libs/HCNetSDK.jar')
+    compile files('src/main/libs/PlayerSDK.jar')
+    compile files('src/main/libs/fastjson-1.2.5.jar')
+    compile files('src/main/libs/gson-2.3.jar')
+    compile files('src/main/libs/Java-WebSocket-1.3.1-SNAPSHOT.jar')
+    compile files('src/main/libs/fastjson-1.2.5.jar')
+    compile files('src/main/libs/gson-2.3.jar')
+    compile files('src/main/libs/lite-http-2.3.1.jar')
+    compile files('src/main/libs/volly-1.0.11.jar')
+    compile 'com.github.bumptech.glide:glide:3.7.0'
+    compile 'com.android.support:support-v4:23.1.1'
+    compile 'com.android.support:recyclerview-v7:23.1.1'
+    compile 'de.greenrobot:eventbus:3.0.0-beta1'
+}

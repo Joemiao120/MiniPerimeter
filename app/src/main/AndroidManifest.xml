@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.nsitd.miniperimeter">
+
+    <!--海康 权限-->
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.CAPTURE_AUDIO_OUTPUT" />
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <!--海康 权限-->
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <!-- voice bright -->
+    <uses-permission android:name="android.permission.WRITE_SETTINGS" />
+
+    <application
+        android:name=".MyApplication"
+        android:allowBackup="true"
+        android:icon="@mipmap/icon"
+        android:label="${APP_NAME}"
+        android:supportsRtl="true"
+        android:theme="@style/appStartStype">
+
+        <activity
+            android:name=".activity.LoginActivity"
+            android:configChanges="orientation|screenSize"
+            android:screenOrientation="landscape">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".activity.DeviceStatusActivity"
+            android:configChanges="orientation|screenSize"
+            android:screenOrientation="landscape"></activity>
+        <activity
+            android:name=".activity.setting.SystemSettingActivity"
+            android:configChanges="orientation|screenSize"
+            android:screenOrientation="landscape" />
+
+        <activity
+            android:name=".activity.setting.ModifyPasswordActivity"
+            android:configChanges="orientation|screenSize"
+            android:screenOrientation="landscape"></activity>
+        <activity
+            android:name=".activity.setting.PowerSettingActivity"
+            android:configChanges="orientation|screenSize"
+            android:screenOrientation="landscape" />
+        <activity
+            android:name=".activity.setting.LineSettingActivity"
+            android:configChanges="orientation|screenSize"
+            android:screenOrientation="landscape">
+
+        </activity>
+        <activity
+            android:name=".activity.vedio.VedioHomeActivity"
+            android:configChanges="orientation|screenSize"
+            android:launchMode="singleTask"
+            android:screenOrientation="landscape" />
+        <activity
+            android:name=".activity.vedio.VedioFullPlayActivity"
+            android:configChanges="orientation|screenSize"
+            android:screenOrientation="landscape">
+            <intent-filter>
+                <action android:name="com.nsitd.vediofull.action" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".activity.base.BaseActivity"
+            android:configChanges="orientation|screenSize"
+            android:screenOrientation="landscape" />
+        <activity
+            android:name=".activity.setting.ConfigurationActivity"
+            android:configChanges="orientation|screenSize"
+            android:screenOrientation="landscape"></activity>
+        <activity
+            android:name=".activity.AboutActivity"
+            android:configChanges="orientation|screenSize"
+            android:screenOrientation="landscape" />
+        <activity
+            android:name=".activity.setting.SelectTimeActivity"
+            android:configChanges="orientation|screenSize"
+            android:screenOrientation="landscape"></activity>
+        <activity
+            android:name=".activity.setting.SelectDateActivity"
+            android:configChanges="orientation|screenSize"
+            android:screenOrientation="landscape">
+
+        </activity>
+        <activity
+            android:name=".activity.HistoryAlarmActivity"
+            android:configChanges="orientation|screenSize"
+            android:screenOrientation="landscape">
+            <!--<intent-filter>-->
+            <!--<action android:name="android.intent.action.MAIN" />-->
+
+            <!--<category android:name="android.intent.category.LAUNCHER" />-->
+            <!--</intent-filter>-->
+        </activity>
+        <activity
+            android:name=".activity.vedio.alarm.VedioAlarmHistoryActivity"
+            android:configChanges="orientation|screenSize"
+            android:launchMode="singleTop"
+            android:screenOrientation="landscape"></activity>
+        <activity
+            android:name=".activity.vedio.alarm.VedioAlarmHistoryFullPlayActivity"
+            android:configChanges="orientation|screenSize"
+            android:launchMode="singleTop"
+            android:screenOrientation="landscape">
+            <intent-filter>
+                <action android:name="com.nsitd.vedioalarmfull.action" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".activity.LineFaultActivity"
+            android:configChanges="orientation|screenSize"
+            android:screenOrientation="landscape" />
+
+        <service android:name=".service.MessageService" />
+    </application>
+
+</manifest>

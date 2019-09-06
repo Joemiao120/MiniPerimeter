@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/activity_status_bar_color"
+    android:fitsSystemWindows="true"
+
+    >
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/right_region_alarm"
+        android:layout_gravity="center"
+        android:id="@+id/right_region_mid_iv"
+        />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:layout_marginTop="15dp"
+            >
+
+            <RelativeLayout
+                android:id="@+id/rl_home"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                >
+
+                <ImageView
+                    android:id="@+id/iv_home"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+
+                    android:background="@mipmap/home"/>
+
+                <ImageView
+                    android:id="@+id/iv_red_point"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="-5dp"
+                    android:layout_toRightOf="@+id/iv_home"
+                    android:background="@mipmap/red_point"/>
+            </RelativeLayout>
+
+
+            <ImageView
+                android:id="@+id/iv_back"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/rl_home"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="15dp"
+                android:background="@mipmap/back"/>
+
+        </RelativeLayout>
+        <!--<RelativeLayout-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="0dp"-->
+            <!--android:layout_weight="2"-->
+            <!--android:layout_gravity="center">-->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:textSize="16sp"
+                android:textColor="@color/white"
+                android:id="@+id/right_region_mid_tv"
+                android:layout_centerInParent="true"
+
+                />
+        <!--</RelativeLayout>-->
+        <!--<RelativeLayout-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="0dp"-->
+            <!--android:layout_weight="1.2"-->
+            <!--android:gravity="center"-->
+
+            <!-->-->
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="14sp"
+                android:textColor="@color/white"
+                android:id="@+id/right_region_bottom_tv"
+                android:gravity="center_horizontal"
+                android:layout_alignParentBottom="true"
+                android:layout_marginBottom="5dp"
+                />
+        <!--</RelativeLayout>-->
+
+    </RelativeLayout>
+
+
+
+
+</FrameLayout>

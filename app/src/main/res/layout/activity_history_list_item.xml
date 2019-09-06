@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/rl_item"
+        android:layout_width="match_parent"
+        android:background="@color/history_alarm_list_item_bg"
+        android:layout_height="25dp">
+
+        <TextView
+            android:layout_marginLeft="20dp"
+            android:id="@+id/tv_title"
+            android:textColor="@color/history_alarm_list_title_color"
+            android:layout_centerVertical="true"
+            android:gravity="center_vertical"
+            android:textSize="15sp"
+            android:text="事件:"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+        <TextView
+            android:layout_marginLeft="10dp"
+            android:id="@+id/tv_time"
+            android:layout_toRightOf="@id/tv_title"
+            android:textColor="@color/history_alarm_list_cotent_color"
+            android:textSize="15sp"
+            android:layout_centerVertical="true"
+            android:gravity="center_vertical"
+            android:text="12:00"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+        <TextView
+            android:layout_marginLeft="10dp"
+            android:id="@+id/tv_cotent"
+            android:layout_toRightOf="@id/tv_time"
+            android:textColor="@color/history_alarm_list_cotent_color"
+            android:textSize="15sp"
+            android:layout_centerVertical="true"
+            android:gravity="center_vertical"
+            android:text="12:00"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+    </RelativeLayout>
+</LinearLayout>

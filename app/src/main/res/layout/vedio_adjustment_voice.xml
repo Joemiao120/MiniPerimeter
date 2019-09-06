@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:layout_gravity="center"
+    >
+
+    <com.nsitd.miniperimeter.video.custom_view.VerticalSeekBarWrapper
+        android:layout_width="wrap_content"
+        android:layout_height="130dp"
+        >
+
+        <com.nsitd.miniperimeter.video.custom_view.VerticalSeekBar
+            android:id="@+id/adjustment_voice_seekbar"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            app:seekBarRotation="CW270"
+            android:thumbOffset="0dp"
+            android:progressDrawable="@drawable/player_setting_bright_progressbar"
+            android:thumb="@drawable/player_settings_voice_bright_thumb"
+            />
+    </com.nsitd.miniperimeter.video.custom_view.VerticalSeekBarWrapper>
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/player_settings_voice_tag"
+        android:id="@+id/play_adjustmet_iv"
+        android:layout_marginTop="4dp"
+        android:layout_gravity="center"
+        />
+</LinearLayout>

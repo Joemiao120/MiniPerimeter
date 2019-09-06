@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    android:fitsSystemWindows="true"
+    tools:context=".activity.vedio.VedioHomeActivity">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingLeft="@dimen/activity_home_horizontal_margin"
+        android:paddingRight="@dimen/activity_home_vertical_margin">
+
+
+        <RelativeLayout
+            android:id="@+id/vedio_title_layout"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/activity_vedio_title_bar"
+            android:orientation="horizontal"
+
+            >
+
+            <LinearLayout
+                android:layout_width="200dp"
+                android:layout_height="match_parent">
+
+                <RelativeLayout
+                    android:id="@+id/home_set_layout"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1">
+
+                    <ImageView
+                        android:id="@+id/home_set_imageview"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:scaleType="center"
+                        android:src="@drawable/home_set" />
+
+                    <ImageView
+                        android:id="@+id/home_set_red"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignTop="@+id/home_set_imageview"
+                        android:layout_marginLeft="-10dp"
+                        android:layout_marginTop="-6dp"
+                        android:layout_toRightOf="@+id/home_set_imageview"
+                        android:src="@drawable/home_set_red" />
+                </RelativeLayout>
+
+
+                <ImageView
+                    android:id="@+id/home_history_playback_iv"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_centerVertical="true"
+                    android:layout_toRightOf="@+id/home_set_imageview"
+                    android:layout_weight="1"
+                    android:scaleType="center"
+                    android:src="@drawable/home_history_playback" />
+
+                <ImageView
+                    android:id="@+id/home_history_alarm_iv"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_centerVertical="true"
+                    android:layout_toRightOf="@+id/home_history_playback_iv"
+                    android:layout_weight="1"
+                    android:scaleType="center"
+                    android:src="@drawable/home_history_alarm" />
+            </LinearLayout>
+
+
+            <TextView
+                android:id="@+id/home_monitor_title_tv"
+                android:layout_width="140dp"
+                android:layout_height="40dp"
+                android:layout_centerInParent="true"
+                android:background="@drawable/home_vedio_title_corner_bg"
+                android:gravity="center"
+                android:text="@string/home_monitor_title"
+                android:textColor="@android:color/white"
+                android:textSize="16sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="4dp"
+                android:layout_toLeftOf="@+id/home_sector_iv"
+                android:text="布防"
+                android:textColor="@color/button_bg" />
+
+            <ImageView
+                android:id="@+id/home_sector_iv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="5dp"
+                android:background="@drawable/home_sector_on"
+
+                />
+
+
+        </RelativeLayout>
+
+        <!--<GridView-->
+        <!--android:layout_below="@id/vedio_title_layout"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+
+        <!--android:horizontalSpacing="@dimen/activity_home_horizontal_margin"-->
+        <!--android:verticalSpacing="@dimen/activity_home_vertical_margin"-->
+        <!--android:id="@+id/video_gridview"-->
+        <!--android:scrollbars="none"-->
+        <!-->-->
+        <!--</GridView>-->
+
+        <RelativeLayout
+            android:id="@+id/content_relativelayout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@id/vedio_title_layout">
+
+
+        </RelativeLayout>
+
+        <!--<FrameLayout-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="match_parent"-->
+        <!--android:layout_below="@id/vedio_title_layout"-->
+        <!--android:layout_marginTop="16dp"-->
+        <!--android:id="@+id/vedio_playsurface"-->
+
+        <!-->-->
+        <!--<SurfaceView-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="match_parent"-->
+        <!--android:background="@color/gray"-->
+        <!--android:id="@+id/test_surf"-->
+        <!--/>-->
+
+        <!--</FrameLayout>-->
+    </RelativeLayout>
+
+
+</RelativeLayout>
